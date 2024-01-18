@@ -1,0 +1,41 @@
+import React,{ useState, useEffect } from 'react';
+import Login from './Login';
+import LoggedIn from './loggedIn';
+import { getTokenFromUrl } from './spotify';
+import Search from './components/search';
+import Navi from './components/nav';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+// http://localhost:3000/?code=AQAiH0730PzhHZYIVmapIb_UNTTJWby9KeZn6dODK4F05m9wC3W9Nff7G8MmRXwR_lYVUcFwWvwv3t5vjOV7AXCbkN3hnwjr1T6gdJDp-czueMsyJBPT33VZ7X-COI-IbSsOWvIYelvPLsvbojfJTlv_149Ao2k437QSiCyrcQG37PG03cgmTAVpphBevO9CVVmc4lep
+
+export default function Main() {
+  const [token, setToken] = useState(null);
+  useEffect(() => {
+    const hash = getTokenFromUrl();
+    window.location.hash = "";
+    const Atoken = hash.access_token;
+
+    if (Atoken) {
+      setToken(Atoken);
+      console.log("トークンを取得");
+      console.log(Atoken);
+    } else {
+      console.error("トークンが取得できませんでした。");
+    }
+  }, []);
+  return (
+    <div className='indexWrap'>
+      { token ? (
+        <div>
+          <BrowserRouter>
+            <Routes>
+              <Route path='' element={<LoggedIn/>}/>
+              <Route path='/search' element={<Search token={token} />}/>
+            </Routes>
+          </BrowserRouter>
+          <Navi />
+        </div>
+      ) : <Login/>} 
+    </div>
+  );
+}
