@@ -24,20 +24,16 @@ export default function Main() {
   }, []);
   return (
     <div className='indexWrap'>
-      {/* { token ? (
+      { token ? (
         <div>
           <LoggedIn/>
           <Search token={token} />
           <Navi />
         </div>
       ) :
-        <Login/>
-      }  */}
-      <div>
-          <LoggedIn/>
-          <Search token={token} />
-          <Navi />
-      </div>
+      // <Login/>
+
+      } 
     </div>
   );
 }
