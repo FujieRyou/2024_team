@@ -1,11 +1,13 @@
-import {accessUrl} from "./spotify"
+import {accessUrl} from "./api/auth/spotify"
 
 
 export default function Login() {
     return (
         <div className="loginWrap">
-            <div className="logoBox"></div>
-            <h2>muve</h2>
+            <div className="logoBox">
+                <p>ロゴ</p>
+            </div>
+            <h2 className="appName">muve</h2>
             <a className='signBtn' href={accessUrl}>
                 Login with Spotify
             </a>

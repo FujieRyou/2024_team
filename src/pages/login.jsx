@@ -1,4 +1,4 @@
-import {accessUrl} from "./spotify"
+import {accessUrl} from "./api/auth/spotify"
 
 
 export default function Login() {
