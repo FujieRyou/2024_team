@@ -43,7 +43,7 @@ export const getTokenFromUrl = () => {
     }, {});
 };
 
-export const accessUrl = `${authEndpoint}?client_id=${process.env.clientId}&client_secret=${process.env.clientSecret}&redirect_uri=${redirectUri}&scope=${scopes.join(' ')}&response_type=token&show_dialog=true`;
+export const accessUrl = `${authEndpoint}?client_id=${process.env.clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(' ')}&response_type=token&show_dialog=true`;
 
 export const getPlaylists = async (token) => {
     try {
