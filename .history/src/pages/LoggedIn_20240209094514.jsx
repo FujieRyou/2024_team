@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createCollaboPlaylist, getPlaylists, getCurrentUserId } from "./spotify";
 import Scroll2 from './components/musicSlide';
-import NowMusic from './components/nowMusic';
 
 function LoggedIn({ token }) {
     const [playlists, setPlaylists] = useState([]);
@@ -39,7 +38,7 @@ function LoggedIn({ token }) {
             </div>
             <div className='myPageIcon'>
                 <a href="">
-                    <img src="./img/myIcon.svg" alt="" />
+                    <img src="" alt="" />
                 </a>
             </div>
         </header>
@@ -122,7 +121,7 @@ function LoggedIn({ token }) {
                 </div>
                 <img src="./img/detailBtn.svg" alt="" />
             </div>
-            <NowMusic />
+
         </div>
     </div>
     )

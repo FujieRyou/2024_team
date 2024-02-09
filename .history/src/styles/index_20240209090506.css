@@ -90,18 +90,14 @@ nav{
 }
 
 .logoBox{
-    width: 143px;
-    height: 138px;
+    width: 64px;
+    height: 64px;
+    background-color: gray;
     color: #fff;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.logoBox img{
-    width: 100%;
-    height: 100%;
 }
 
 h2{
@@ -316,7 +312,7 @@ input{
 #songContent_wrap{
     display: flex;
     width: 100%;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
     padding: 0px 32px 0px 22px;
@@ -324,27 +320,20 @@ input{
 
 .song_num{
     font-size: 20px;
-    margin-right: 16px;
 }
 
 #song_wrap{
-    width: 230px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* gap: 10px; */
+    gap: 10px;
 }
 
 
 .song_img{
+    border: solid 1px skyblue;
     width: 70px;
     height: 70px;
-    margin-right: 8px;
-}
-
-.song_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .songtitle{
@@ -361,11 +350,10 @@ input{
     width: 17px;
     height: 17px;
     border-radius: 20px;
-    margin-right: 8px;
+    margin-right: 6px;
 }
 .contributor > p{
     font-size: 11px;
-    margin-right: 8px;
 }
 
 .button_wrap{
@@ -432,6 +420,7 @@ input{
 
 
 .scrollContent {
+    position: relative;
     width: 100vw;
     margin: 0 auto;
 }
@@ -442,12 +431,10 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .scrollWrap > .scroll > li {
     transition: all 0.5s ease-in-out, left 0.5s ease, right 0.5s ease;
     position: absolute;
-    top: 20px;
 }
 .scroll {
     display: flex;
@@ -455,7 +442,7 @@ input{
     align-items: center;
     perspective-origin: center center;
     transform-origin: center center;
-    perspective: 600px;
+    perspective: 1000px;
 }
 
 li {
@@ -490,42 +477,10 @@ li {
 }
 
 li img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
 .un-active {
     opacity: 0;
-}
-
-.nowMusicWrap{
-    width: 351px;
-    height: 52px;
-    background-color: #141A51;
-    border-radius: 13px;
-    position: absolute;
-    bottom: 92px;
-    right: 0px;
-    left: 0px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 57px 0px 12px;
-}
-
-.nowMusicWrap img{
-    width: 17px;
-    height: 16px;
-}
-
-.nowMusicImg{
-    display: flex;
-    align-items: center;
-}
-
-.nowMusicImg img{
-    width: 36px;
-    height: 36px;
-    margin-right: 5px;
 }

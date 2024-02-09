@@ -7,6 +7,7 @@ export default function Login() {
             <div className="logoBox">
                 <img src="./img/logo.svg" alt="" />
             </div>
+            <h2 className="appName">muve</h2>
             <a className='signBtn' href={accessUrl}>
                 Login with Spotify
             </a>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createCollaboPlaylist, getPlaylists, getCurrentUserId } from "./spotify";
 import Scroll2 from './components/musicSlide';
-import NowMusic from './components/nowMusic';
 
 function LoggedIn({ token }) {
     const [playlists, setPlaylists] = useState([]);
@@ -39,7 +38,7 @@ function LoggedIn({ token }) {
             </div>
             <div className='myPageIcon'>
                 <a href="">
-                    <img src="./img/myIcon.svg" alt="" />
+                    <img src="" alt="" />
                 </a>
             </div>
         </header>
@@ -96,7 +95,7 @@ function LoggedIn({ token }) {
                     </div>         
                     <div id="singer_wrap">
                         <p className="songtitle">GEN!!GEN!!GEN!!</p>
-                        <p className="singer">ケンシロウ</p>
+                        <p className="singer">¥ellow Bucks</p>
                     </div>
                 </div>
                 <div className='contributor'>
@@ -113,7 +112,7 @@ function LoggedIn({ token }) {
                     </div>         
                     <div id="singer_wrap">
                         <p className="songtitle">愛をとりもどせ</p>
-                        <p className="singer">アイムジャグラー</p>
+                        <p className="singer">¥ellow Bucks</p>
                     </div>
                 </div>
                 <div className='contributor'>
@@ -122,7 +121,7 @@ function LoggedIn({ token }) {
                 </div>
                 <img src="./img/detailBtn.svg" alt="" />
             </div>
-            <NowMusic />
+
         </div>
     </div>
     )

@@ -90,18 +90,14 @@ nav{
 }
 
 .logoBox{
-    width: 143px;
-    height: 138px;
+    width: 64px;
+    height: 64px;
+    background-color: gray;
     color: #fff;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.logoBox img{
-    width: 100%;
-    height: 100%;
 }
 
 h2{
@@ -328,10 +324,11 @@ input{
 }
 
 #song_wrap{
-    width: 230px;
+    width: 300px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* gap: 10px; */
+    gap: 10px;
 }
 
 
@@ -361,11 +358,10 @@ input{
     width: 17px;
     height: 17px;
     border-radius: 20px;
-    margin-right: 8px;
+    margin-right: 6px;
 }
 .contributor > p{
     font-size: 11px;
-    margin-right: 8px;
 }
 
 .button_wrap{
@@ -496,36 +492,4 @@ li img {
 }
 .un-active {
     opacity: 0;
-}
-
-.nowMusicWrap{
-    width: 351px;
-    height: 52px;
-    background-color: #141A51;
-    border-radius: 13px;
-    position: absolute;
-    bottom: 92px;
-    right: 0px;
-    left: 0px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 57px 0px 12px;
-}
-
-.nowMusicWrap img{
-    width: 17px;
-    height: 16px;
-}
-
-.nowMusicImg{
-    display: flex;
-    align-items: center;
-}
-
-.nowMusicImg img{
-    width: 36px;
-    height: 36px;
-    margin-right: 5px;
 }

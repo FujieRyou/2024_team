@@ -511,7 +511,6 @@ li img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 57px 0px 12px;
 }
 
 .nowMusicWrap img{
@@ -521,11 +520,9 @@ li img {
 
 .nowMusicImg{
     display: flex;
-    align-items: center;
 }
 
 .nowMusicImg img{
     width: 36px;
     height: 36px;
-    margin-right: 5px;
 }

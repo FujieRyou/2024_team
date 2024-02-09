@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createCollaboPlaylist, getPlaylists, getCurrentUserId } from "./spotify";
 import Scroll2 from './components/musicSlide';
-import NowMusic from './components/nowMusic';
 
 function LoggedIn({ token }) {
     const [playlists, setPlaylists] = useState([]);
@@ -39,7 +38,7 @@ function LoggedIn({ token }) {
             </div>
             <div className='myPageIcon'>
                 <a href="">
-                    <img src="./img/myIcon.svg" alt="" />
+                    <img src="" alt="" />
                 </a>
             </div>
         </header>
@@ -58,11 +57,10 @@ function LoggedIn({ token }) {
                 <p className="song_num">1</p>
                 <div id="song_wrap">
                     <div className="song_img">
-                        <img src="/img/scroll.webp" alt="" />
                     </div>         
                     <div id="singer_wrap">
-                        <p className="songtitle">魂のルフラン</p>
-                        <p className="singer">バナージリンクス</p>
+                        <p className="songtitle">higher</p>
+                        <p className="singer">¥ellow Bucks</p>
                     </div>
                 </div>
                 <div className='contributor'>
@@ -75,11 +73,10 @@ function LoggedIn({ token }) {
                 <p className="song_num">1</p>
                 <div id="song_wrap">
                     <div className="song_img">
-                        <img src="/img/scroll2.webp" alt="" />
                     </div>         
                     <div id="singer_wrap">
-                        <p className="songtitle">よっしゃあ漢唄</p>
-                        <p className="singer">角田 信郎</p>
+                        <p className="songtitle">higher</p>
+                        <p className="singer">¥ellow Bucks</p>
                     </div>
                 </div>
                 <div className='contributor'>
@@ -92,11 +89,10 @@ function LoggedIn({ token }) {
                 <p className="song_num">1</p>
                 <div id="song_wrap">
                     <div className="song_img">
-                        <img src="/img/scroll3.webp" alt="" />
                     </div>         
                     <div id="singer_wrap">
-                        <p className="songtitle">GEN!!GEN!!GEN!!</p>
-                        <p className="singer">ケンシロウ</p>
+                        <p className="songtitle">higher</p>
+                        <p className="singer">¥ellow Bucks</p>
                     </div>
                 </div>
                 <div className='contributor'>
@@ -105,24 +101,7 @@ function LoggedIn({ token }) {
                 </div>
                 <img src="./img/detailBtn.svg" alt="" />
             </div>
-            <div id="songContent_wrap">
-                <p className="song_num">1</p>
-                <div id="song_wrap">
-                    <div className="song_img">
-                        <img src="/img/scroll4.webp" alt="" />
-                    </div>         
-                    <div id="singer_wrap">
-                        <p className="songtitle">愛をとりもどせ</p>
-                        <p className="singer">アイムジャグラー</p>
-                    </div>
-                </div>
-                <div className='contributor'>
-                    <img src="" alt="" />
-                    <p>ナナシ</p>
-                </div>
-                <img src="./img/detailBtn.svg" alt="" />
-            </div>
-            <NowMusic />
+
         </div>
     </div>
     )

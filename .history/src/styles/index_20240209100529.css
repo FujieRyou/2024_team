@@ -503,29 +503,4 @@ li img {
     height: 52px;
     background-color: #141A51;
     border-radius: 13px;
-    position: absolute;
-    bottom: 92px;
-    right: 0px;
-    left: 0px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 57px 0px 12px;
-}
-
-.nowMusicWrap img{
-    width: 17px;
-    height: 16px;
-}
-
-.nowMusicImg{
-    display: flex;
-    align-items: center;
-}
-
-.nowMusicImg img{
-    width: 36px;
-    height: 36px;
-    margin-right: 5px;
 }
